@@ -1,0 +1,12 @@
+- name: Start PXE server
+  hosts: localhost
+  tags: pxe
+  roles:
+    - pxe_server
+- name: Common
+  remote_user: ubuntu
+  become: true
+  hosts: all
+  tags: common
+  roles:
+    - common

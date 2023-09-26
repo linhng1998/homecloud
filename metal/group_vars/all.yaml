@@ -1,0 +1,6 @@
+ansible_python_interpreter: .venv/bin/python3
+host_key_checking: false
+ssh_public_key: "{{lookup('file', '~/.ssh/id_rsa.pub') }}"
+ssh_private_key_file: ~/.ssh/id_rsa
+hashed_passwd: $6$salt$TWkpLer6mNlvVCRV9h4nyOnEO19S/bXHUjYYkTRw8za8F0W00J0ILCqNPIlCnnuySjMyDLsRPimHSGTlEgktQ1 # generated using command "openssl passwd -6 -salt salt yourpassword"
+ubuntu_release_iso: https://releases.ubuntu.com/jammy/ubuntu-22.04.3-live-server-amd64.iso
